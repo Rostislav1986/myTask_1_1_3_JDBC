@@ -13,7 +13,6 @@ public class UserServiceTest {
     private final String testLastName = "Ivanov";
     private final byte testAge = 5;
 
-
     @Test
     public void dropUsersTable() {
         try {
@@ -23,7 +22,6 @@ public class UserServiceTest {
             Assert.fail("При тестировании удаления таблицы произошло исключение\n" + e);
         }
     }
-
     @Test
     public void createUsersTable() {
         try {
@@ -33,7 +31,6 @@ public class UserServiceTest {
             Assert.fail("При тестировании создания таблицы пользователей произошло исключение\n" + e.getMessage());
         }
     }
-
     @Test
     public void saveUser() {
         try {
@@ -54,7 +51,6 @@ public class UserServiceTest {
             Assert.fail("Во время тестирования сохранения пользователя произошло исключение\n" + e);
         }
     }
-
     @Test
     public void removeUserById() {
         try {
