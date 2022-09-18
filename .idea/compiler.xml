@@ -9,6 +9,7 @@
         <module name="myTask_1_1_3_JDBC" />
         <module name="PP_1_1_3-JDBC" />
         <module name="MyTaskJDBC" />
+        <module name="myTask_1_1_4_JDBC" />
       </profile>
     </annotationProcessing>
   </component>

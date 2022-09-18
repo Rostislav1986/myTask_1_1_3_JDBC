@@ -79,7 +79,7 @@ public class UserDaoJDBCImpl implements UserDao {
         } catch (SQLException sqlException) {
             sqlException.printStackTrace();
         }
-        return users;
+        return null;
     }
 
     public void cleanUsersTable() {

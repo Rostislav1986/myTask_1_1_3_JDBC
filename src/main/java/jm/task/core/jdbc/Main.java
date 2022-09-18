@@ -1,9 +1,10 @@
 package jm.task.core.jdbc;
+import jm.task.core.jdbc.dao.UserDao;
 import jm.task.core.jdbc.dao.UserDaoHibernateImpl;
 
 public class Main {
     public static void main(String[] args) {
-        UserDaoHibernateImpl userDao = new UserDaoHibernateImpl();
+        UserDao userDao = new UserDaoHibernateImpl();
         userDao.createUsersTable();
         userDao.saveUser("Максим", "Синявский", (byte) 34);
         userDao.saveUser("Марат", "Ачилов", (byte) 33);
@@ -14,10 +15,9 @@ public class Main {
         userDao.saveUser("Вячеслав", "Шигин", (byte) 22);
 
         userDao.getAllUsers();
+        userDao.cleanUsersTable();
 
-        /*   userDao.cleanUsersTable();
-
-        //userDao.dropUsersTable();*/
+        userDao.dropUsersTable();
     }
     }
 
